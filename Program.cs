@@ -12,9 +12,18 @@ namespace Greed
         {
             int[] testArray = { 1, 1, 1, 1, 1 };
 
-            Console.WriteLine(scoreDice(testArray));
-            Console.WriteLine(scoreDice(rollDice()));
-            Console.WriteLine(listDiceRollsValues(rollDice()));
+            Console.WriteLine("Three 1's => 1000 points");
+            Console.WriteLine("Three 6's =>  600 points");
+            Console.WriteLine("Three 5's =>  500 points");
+            Console.WriteLine("Three 4's =>  400 points");
+            Console.WriteLine("Three 3's =>  300 points");
+            Console.WriteLine("Three 2's =>  200 points");
+            Console.WriteLine("One   1   =>  100 points");
+            Console.WriteLine("One   5   =>   50 points");
+            Console.WriteLine();
+            Console.WriteLine("Test Roll based on rolling 1, 1, 1, 1, 1: " + scoreDice(testArray));
+            Console.WriteLine("Rolled Dice Numbers: " + listDiceRollsValues(rollDice()));
+            Console.WriteLine("Score: " + scoreDice(rollDice()));
             Console.ReadLine();
         }
         //Rolls the dice
